@@ -1,0 +1,26 @@
+# Sensitive session files
+loot/cs*.txt
+loot/as*.txt
+loot/cookies_*.txt
+*.session
+*.cookie
+
+# Raw evidence with unredacted data
+loot/poc_evidence.json
+
+# MCP and Claude workspace
+.mcp.json
+.claude/
+
+# Reconnaissance data
+recon/
+
+# Temporary files
+*.tmp
+*.log
+/tmp/
+__pycache__/
+*.pyc
+
+# Raw loot directory (use evidence/ for redacted copies)
+loot/

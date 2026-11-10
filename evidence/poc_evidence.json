@@ -1,0 +1,71 @@
+{
+  "FDS-011": {
+    "timestamp": "2026-11-09T22:01:58Z",
+    "account": "endangapprover@gmail.com",
+    "account_case": "b87acde7-9b47-42d8-8980-4d6464c4f76b",
+    "target_case": "aafc67a4-d2bc-4264-8bf9-065b7fe8816c",
+    "http_code": "200",
+    "notes_returned": 5,
+    "sample_notes": [
+      {
+        "id": "01a08fa3-de2e-7f13-a0d6-2ee151ee845a",
+        "authorName": "jarot",
+        "body": "i think this could be a fraud"
+      },
+      {
+        "id": "01a1c215-0289-7db4-af95-76e979a1c4ab",
+        "authorName": "Endang Nurakhiri Approver",
+        "body": "test"
+      },
+      {
+        "id": "01a1c215-2798-7110-8fcb-e326ec6b9bc1",
+        "authorName": "Endang Nurakhiri Approver",
+        "body": "[[marker]]"
+      }
+    ],
+    "raw_response": "[REDACTED]"
+  },
+  "FDS-012": {
+    "timestamp": "2026-11-09T22:01:58Z",
+    "account": "endangapprover@gmail.com",
+    "attacker_case": "b87acde7-9b47-42d8-8980-4d6464c4f76b",
+    "victim_case": "aafc67a4-d2bc-4264-8bf9-065b7fe8816c",
+    "marker": "[PENTEST-POC-FDS012-2026-11-09T22:01:58Z]",
+    "created_note_id": "01a1c255-1d5b-7a00-a327-f67c3609c6c9",
+    "http_code": "200",
+    "raw_response": "[REDACTED]",
+    "verification_code": "200",
+    "rogue_note_visible_in_victim_case": true
+  },
+  "FDS-013": {
+    "timestamp": "2026-11-09T22:01:58Z",
+    "checker": {
+      "account": "endangchecker@gmail.com",
+      "role": "Checker",
+      "http_code": "200",
+      "response": "0:{\"a\":\"$@1\",\"q\":\"\",\"i\":false}\n1:{\"data\":{\"riskScore\":{\"maxScore\":100,\"medium\":{\"max_score\":79},\"high\":{\"min_score\":80}},\"autoResolve\":{\"medium\":{\"is_active\":false,\"timeout\":{\"time\":30,\"time_type\":\"minutes\"}},\"high\":{\"is_active\":true,\"timeout\":{\"time\":30,\"time_type\":\"hours\"}}},\"overdue\":{\"medium\":{\"is_active\":false,\"timeout\":{\"time\":15,\"time_type\":\"minutes\"}},\"high\":{\"is_active\":true,\"timeout\":{\"time\":15,\"time_type\":\"minutes\"}}}}}\n"
+    },
+    "approver": {
+      "account": "endangapprover@gmail.com",
+      "role": "Approver",
+      "http_code": "200",
+      "response": "0:{\"a\":\"$@1\",\"q\":\"\",\"i\":false}\n1:{\"data\":null,\"error\":{\"code\":403,\"message\":\"Forbidden\"}}\n"
+    },
+    "config_exposed": null
+  },
+  "FDS-014": {
+    "timestamp": "2026-11-09T22:01:58Z",
+    "checker": {
+      "http_code": "200",
+      "response": "0:{\"a\":\"$@1\",\"q\":\"\",\"i\":false}\n1:{\"success\":true}\n"
+    },
+    "approver": {
+      "http_code": "200",
+      "response": "0:{\"a\":\"$@1\",\"q\":\"\",\"i\":false}\n1:{\"success\":true}\n"
+    },
+    "with_state_payload": {
+      "http_code": "200",
+      "response": "0:{\"a\":\"$@1\",\"q\":\"\",\"i\":false}\n1:{\"success\":true}\n"
+    }
+  }
+}
